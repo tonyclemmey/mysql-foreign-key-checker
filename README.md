@@ -15,3 +15,10 @@ Checks a mysql database for foreign keys pointing to missing records.
 ```
 
 2. run `ruby ./find-invalid-keys.rb`
+
+
+Note. MacOS Catalina Install mysql2
+
+```
+$ gem install mysql2 -v '0.5.3' -- --with-cflags="-I/usr/local/opt/openssl/include" --with-ldflags="-L/usr/local/opt/openssl/lib"
+```
